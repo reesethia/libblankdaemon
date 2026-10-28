@@ -1,0 +1,12 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check status
+        run: echo "setup complete"
